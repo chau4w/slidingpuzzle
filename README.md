@@ -40,8 +40,7 @@
 ![](image/About.png)
 
 ![](image/ThemeChoice.png)
-
-![](image/123.png)
+![](image/winGame.png)
 
 
 
