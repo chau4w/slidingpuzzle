@@ -44,11 +44,11 @@
 ## **Setup**
 
 - *Cài đặt*
-  1. Truy cập vào đường link:  https://drive.google.com/drive/folders/1JbpsFMJpLObLW2v72GuEu6sFVJ3vcx0H?usp=sharing
+  1. Truy cập vào đường link:  https://vnueduvn-my.sharepoint.com/:f:/g/personal/21020286_vnu_edu_vn/EnpA1Ovso5JGi5Dd0GZ8oVQBhKGn0ykcEy9wClbzr-Dpsg?e=oSJ53d
   
-  2. Vào file **"Release"**, tải lần lượt từng file **"Setup.exe"** và **"Chou_puzzle.msi"** (lưu ý 2 file vừa tải về để trong cùng 1 thư mục máy tính)
+  2. Tải file **"Release"**.
 
-  3. Vào file **"Setup.exe"**, Sau đó cài đặt theo hướng dẫn của chương trình.
+  3. Vào file vừa tải về, chọn file **"Setup.exe"**, sau đó cài đặt theo hướng dẫn của chương trình.
 
   4. Nhấn close, thoát ra màn hình chính, ấn đúp chuột vào icon puzzle để bắt đầu chơi.
 
