@@ -1,8 +1,10 @@
 # ***Sliding Puzzle***
+
 ## **Introduction**
-+ Bài tập lớn - Sliding Puzzle (INT2215 1 - Lập trình nâng cao)
 
 + Mã sinh viên:  21020286 - Lê Minh Châu - K66CB - UET
+
++ Bài tập lớn - Sliding Puzzle (INT2215 1 - Lập trình nâng cao)
 
 ## **Description**
 
@@ -15,17 +17,19 @@
 
 ### *Controls and Options*
 
+
+| Option         | Key       |
+|----------      |-----------|
+| Shuffle Puzzle | x |
+| Return to home | b |
+
+
 | Control | Key   |
 |---------|-------|
 | UP      | ↑     |
 | DOWN    | ↓     |
 | LEFT    | ←     |
 | RIGHT   | →     |
-
-| Option         | Key       |
-|----------      |-----------|
-| Shuffle Puzzle | x |
-| Return to home | b |
 
 
 ### *Preview*
@@ -44,41 +48,29 @@
 ## **Setup**
 
 - *Cài đặt*
-  1. Truy cập vào đường link:  https://vnueduvn-my.sharepoint.com/:f:/g/personal/21020286_vnu_edu_vn/EnpA1Ovso5JGi5Dd0GZ8oVQBhKGn0ykcEy9wClbzr-Dpsg?e=oSJ53d
+  1. Vào đường link sau:  https://vnueduvn-my.sharepoint.com/:f:/g/personal/21020286_vnu_edu_vn/EnpA1Ovso5JGi5Dd0GZ8oVQBhKGn0ykcEy9wClbzr-Dpsg?e=oSJ53d
   
-  2. Tải file **"Release"**.
+  2. Tải file **"Release"** và giải nén.
 
   3. Vào file vừa tải về, chọn file **"Setup.exe"**, sau đó cài đặt theo hướng dẫn của chương trình.
 
-  4. Nhấn close, thoát ra màn hình chính, ấn đúp chuột vào icon puzzle để bắt đầu chơi.
+  4. Thoát ra màn hình chính, vào game bắt đầu chơi.
 
-- *Gỡ bỏ*
-  1. Vào control panel.
 
-  2. Tìm kiếm Uninstall a program.
+- *Khi gặp lỗi "The code execution cannot proceed because ....dll was not found. Reinstalling the program may fix this problem.":*
 
-  3. Ấn đúp chuột vào file SlidingPuzzle_21020286UET.
+  1. Truy cập vào đường link ở trên, tải về file **"System32"** và **"SysWOW64"** và giải nén file vừa tải về.
 
-  4. Ấn "Yes" nếu chắc chắn bạn muốn gỡ bỏ chương trình.
+  2. Copy file .dll  trong file **"System32"** đưa vào trong thư mục **"C:\Windows\System32"**, file .dll  trong file **"SysWOW64"** đưa vào trong thư mục **"C:\Windows\SysWOW64"**.
 
-- *Trong trường hợp xuất hiện lỗi "The code execution cannot proceed because ....dll was not found. Reinstalling the program may fix this problem.":*
-
-  1. Truy cập vào đường link ở trên, tải về file **"System32"** và **"SysWOW64"**.
-
-  2. Giải nén file vừa tải về.
-
-  3. Copy file .dll  trong file **"System32"** dán vào trong thư mục **"C:\Windows\System32"** .
-
-  4. Copy file .dll  trong file **"SysWOW64"** dán vào trong thư mục **"C:\Windows\SysWOW64"**.
-
-  5. Thoát ra ngoài và chạy lại chương trình.
-
+  3. Khởi chạy lại game vừa cài đặt
 
 - *Mọi khó khăn trong việc cài đặt, trong quá trình chơi, hay gỡ bỏ, hãy email qua 21020286@vnu.edu.vn.*
 
 
 
 ## **See also**
+
 ### *Các kĩ thuật sử dụng*
 
 
@@ -92,12 +84,16 @@
 
 - Đóng gói chương trình để có thể cài đặt, chơi được ở các máy tính thông thường.
 
+### *Mức điểm tự đánh giá: 9/10.*
+
 ### *Nguồn tham khảo:*
-- https://lazyfoo.net/tutorials/SDL/index.php (các hàm trong thư viện SDL2.0, ...)
+- Logic game em tự nghĩ.
+
+- https://lazyfoo.net/tutorials/SDL/index.php (thư viện SDL2.0, ...)
 
 - https://phattrienphanmem123az.com/lap-trinh-game-cpp (tile map, tạo menu).
 - Một số hình ảnh tự design và âm thanh tìm ở trên web -.-
 https://www.wavsource.com/sfx/sfx.htm,
 https://vi.pngtree.com/
-- Logic game em tự nghĩ.
-### *Mức điểm tự đánh giá: 9/10.*
+
+
