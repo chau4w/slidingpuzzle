@@ -9,7 +9,8 @@ enum KeyDirections
     KEY_DOWN,
     KEY_LEFT,
     KEY_RIGHT,
-    KEY_CHANGE
+    KEY_CHANGE,
+    KEY_BACK
 };
 void functionKey(SDL_Event e, int& type);
 

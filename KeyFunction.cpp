@@ -19,6 +19,12 @@ void functionKey(SDL_Event e, int& type)
         case SDLK_x:
             type = KEY_CHANGE;
             break;
+        case SDLK_b:
+            type = KEY_BACK;
+            break;
+        default:
+            type = 10;
+            break;
     }
 }
 

@@ -80,6 +80,9 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
                 case SDLK_b:
                     inTheme = false;
                     break;
+                default:
+                    inTheme = true;
+                    break;
                 }
 
                 SDL_RenderPresent(renderer);
@@ -214,6 +217,7 @@ void GameMap::setPicturePieces(int& y_empty, int& x_empty, int type, bool render
                 }
             }
             break;
+
    }
 
    if(renderWin)
@@ -242,10 +246,16 @@ void GameMap::randomMode(int& y_empty, int& x_empty, MusicGame& music, int& movi
                 setPicturePieces(y_empty, x_empty, tip, false, quit, music, movingCount);
             }
  }
-void GameMap::functionChoice(int& y_empty, int& x_empty, int type, bool& quit, MusicGame& music, int& movingCount)
+void GameMap::functionChoice(int& y_empty, int& x_empty, int type, bool& quit, MusicGame& music, int& movingCount, bool& tryAgain)
 {
     if(type == KEY_CHANGE) randomMode(y_empty, x_empty, music, movingCount);
-    else setPicturePieces(y_empty, x_empty, type, true, quit, music, movingCount);
+    if(type == KEY_BACK)
+    {
+        quit = true;
+        tryAgain = true;
+    }
+    if(type != 10) setPicturePieces(y_empty, x_empty, type, true, quit, music, movingCount);
+
 }
 
 void GameMap::WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music, int& movingCount, TTF_Font* font)
@@ -279,7 +289,7 @@ void GameMap::WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, 
             }
             if(Quit.handleEvent(&event_) == MOUSE_DOWN)
             {
-                out = true;
+                exit(1);
             }
             if(TryAgain.handleEvent(&event_) == MOUSE_DOWN)
             {

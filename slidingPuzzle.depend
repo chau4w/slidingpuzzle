@@ -11,7 +11,7 @@
 	<string>
 	<sstream>
 
-1652582387 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
+1652630170 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
 	"PicturePieces.h"
 
 1641849092 c:\users\administrator\desktop\choutapcode\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl.h
@@ -403,10 +403,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1652356973 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
+1652626282 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
 	"Variable.h"
 
-1652582481 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
+1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -423,38 +423,38 @@
 1651591569 c:\users\administrator\desktop\choutapcode\slidingpuzzle\function.h
 	"Texture.h"
 
-1652338985 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.cpp
+1652626282 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.cpp
 	"Texture.h"
 
-1652381624 c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.h
+1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.h
 	"Variable.h"
 
-1652547729 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
+1652628888 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
 	"PicturePieces.h"
 
-1652545548 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
+1652627708 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
 	"Variable.h"
 	"KeyFunction.h"
 	"MouseFunction.h"
 	"Muzik.h"
 	"Text.h"
 
-1652152533 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.cpp
+1652626281 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.cpp
 	"MouseFunction.h"
 
-1652116689 c:\users\administrator\desktop\choutapcode\slidingpuzzle\keyfunction.h
+1652627593 c:\users\administrator\desktop\choutapcode\slidingpuzzle\keyfunction.h
 	"Texture.h"
 
-1652116689 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\keyfunction.cpp
+1652627593 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\keyfunction.cpp
 	"KeyFunction.h"
 
-1652549186 c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.h
+1652626281 c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.h
 	"Texture.h"
 
-1652547810 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
+1652627488 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
 	"Text.h"
 
-1652547729 c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.h
+1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.h
 	"Variable.h"
 
 1540947618 c:\users\administrator\desktop\choutapcode\sdl2_mixer-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_mixer.h
@@ -466,9 +466,9 @@
 	"begin_code.h"
 	"close_code.h"
 
-1652381624 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\muzik.cpp
+1652626281 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\muzik.cpp
 	"Muzik.h"
 
-1652381624 c:\users\administrator\desktop\choutapcode\slidingpuzzle\muzik.h
+1652626281 c:\users\administrator\desktop\choutapcode\slidingpuzzle\muzik.h
 	"Variable.h"
 

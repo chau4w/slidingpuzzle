@@ -48,7 +48,7 @@ void Text::setColor(int typeColor)
             textColor= { 255, 255, 255 };
             break;
         case RED_:
-            textColor = { 255, 0, 0 };
+            textColor = { 152, 17, 21};
             break;
         case GREEN_:
             textColor = { 0,255,0 };
@@ -57,7 +57,7 @@ void Text::setColor(int typeColor)
             textColor = { 0,0,255 };
             break;
         case YELLOW_:
-            textColor = { 255, 255, 0 };
+            textColor = { 242, 171, 57 };
             break;
         case BLUE_:
             textColor = { 0,255,255 };
