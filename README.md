@@ -79,6 +79,8 @@
 
 - Tạo các đối tượng phụ: số lượt di chuyển...
 
+- Xử lí thời gian, tương tác với chuột và bàn phím, có âm thanh.
+
 - Tạo các menu: Bắt đầu, kết thúc, lựa chọn chủ đề, hướng dẫn,...
 
 - Đóng gói chương trình để có thể cài đặt, chơi được ở các máy tính thông thường.
