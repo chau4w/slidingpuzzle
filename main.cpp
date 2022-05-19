@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
                     gBackGround.render(0, 0, gRenderer);
                     game_map_.DrawMap(gRenderer);
 
-                    int thoiGian = 30 - time_.getTicks() / 1000;
+                    int thoiGian = MAX_TIME - time_.getTicks() / 1000;
                     string s = to_string(thoiGian);
                     totalTime = thoiGian;
                     renderMove.setText(s);

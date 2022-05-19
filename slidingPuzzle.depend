@@ -11,7 +11,7 @@
 	<string>
 	<sstream>
 
-1652947868 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
+1652948290 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
 	"PicturePieces.h"
 	"Time.h"
 
@@ -407,7 +407,7 @@
 1652929524 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
 	"Variable.h"
 
-1652929524 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
+1652948595 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -453,7 +453,7 @@
 1652626281 c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.h
 	"Texture.h"
 
-1652947868 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
+1652948290 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
 	"Text.h"
 
 1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.h

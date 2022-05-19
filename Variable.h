@@ -23,6 +23,8 @@ static TTF_Font* g3Font = NULL;
 
 static int type;
 
+const int MAX_TIME = 90;
+
 const int SCREEN_WIDTH = 950;
 const int SCREEN_HEIGHT = 650;
 const int ALPHA_BACK_GROUND = 100;
