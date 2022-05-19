@@ -58,6 +58,8 @@
 		<Unit filename="Text.h" />
 		<Unit filename="Texture.cpp" />
 		<Unit filename="Texture.h" />
+		<Unit filename="Time.cpp" />
+		<Unit filename="Time.h" />
 		<Unit filename="Variable.cpp" />
 		<Unit filename="Variable.h" />
 		<Unit filename="main.cpp" />

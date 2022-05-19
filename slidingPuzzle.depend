@@ -11,8 +11,9 @@
 	<string>
 	<sstream>
 
-1652630170 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
+1652947868 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
 	"PicturePieces.h"
+	"Time.h"
 
 1641849092 c:\users\administrator\desktop\choutapcode\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
@@ -403,10 +404,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1652626282 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
+1652929524 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
 	"Variable.h"
 
-1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
+1652929524 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -414,6 +415,7 @@
 	<string>
 	<cmath>
 	<iostream>
+	<sstream>
 	<fstream>
 	<time.h>
 
@@ -429,10 +431,10 @@
 1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.h
 	"Variable.h"
 
-1652628888 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
+1652929246 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
 	"PicturePieces.h"
 
-1652627708 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
+1652928961 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
 	"Variable.h"
 	"KeyFunction.h"
 	"MouseFunction.h"
@@ -451,7 +453,7 @@
 1652626281 c:\users\administrator\desktop\choutapcode\slidingpuzzle\mousefunction.h
 	"Texture.h"
 
-1652627488 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
+1652947868 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.cpp
 	"Text.h"
 
 1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\text.h
@@ -470,5 +472,11 @@
 	"Muzik.h"
 
 1652626281 c:\users\administrator\desktop\choutapcode\slidingpuzzle\muzik.h
+	"Variable.h"
+
+1652881983 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\time.cpp
+	"Time.h"
+
+1652881983 c:\users\administrator\desktop\choutapcode\slidingpuzzle\time.h
 	"Variable.h"
 

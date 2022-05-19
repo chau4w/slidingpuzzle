@@ -9,6 +9,7 @@
 #include <string>
 #include <cmath>
 #include <iostream>
+#include <sstream>
 #include <fstream>
 #include <time.h>
 
@@ -18,6 +19,7 @@ static SDL_Window* gWindow = NULL;
 static SDL_Renderer* gRenderer = NULL;
 static TTF_Font* gFont = NULL;
 static TTF_Font* g2Font = NULL;
+static TTF_Font* g3Font = NULL;
 
 static int type;
 
@@ -47,6 +49,15 @@ const int About_y = 330;
 
 const int QuitF_x = 750;
 const int QuitF_y = 480;
+
+const int Theme1_x = 85.2;
+const int Theme1_y = 483.78;
+
+const int Theme2_x = 389.74;
+const int Theme2_y = 483.78;
+
+const int Theme3_x = 680.8;
+const int Theme3_y = 483.78;
 
 #define NUMBER_RANDOM_ 50
 typedef struct MAP

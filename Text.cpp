@@ -19,6 +19,7 @@ Text::~Text()
 
 bool Text::loadFromRenderText(TTF_Font* font, SDL_Renderer* renderer)
 {
+    free();
     SDL_Surface* textSurface = TTF_RenderText_Solid(font, stringVal.c_str(), textColor);
     if(textSurface)
     {
@@ -42,7 +43,7 @@ void Text::setColor(int typeColor)
     switch(typeColor)
     {
         case BLACK_:
-            textColor = {0, 0, 0};
+            textColor = {34, 34, 33};
             break;
         case WHITE_:
             textColor= { 255, 255, 255 };
@@ -51,7 +52,7 @@ void Text::setColor(int typeColor)
             textColor = { 152, 17, 21};
             break;
         case GREEN_:
-            textColor = { 0,255,0 };
+            textColor = { 21,125,29 };
             break;
         case PURPLE_:
             textColor = { 0,0,255 };

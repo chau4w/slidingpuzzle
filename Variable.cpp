@@ -60,6 +60,8 @@ void close()
     SDL_DestroyWindow(gWindow);
     TTF_CloseFont(gFont);
     gFont = NULL;
+    g2Font = NULL;
+    g3Font = NULL;
     gWindow = NULL;
     gRenderer = NULL;
 

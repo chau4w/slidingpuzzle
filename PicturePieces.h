@@ -30,7 +30,8 @@ class GameMap
         void setPicturePieces(int& y_empty, int& x_empty, int type, bool renderWin, bool& quit, MusicGame& music, int& movingCount);
         void randomMode(int& y_empty, int& x_empty, MusicGame& music, int& movingCount);
         void functionChoice(int& y_empty, int& x_empty, int type, bool& quit, MusicGame& music, int& movingCount, bool& tryAgain);
-        void WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music, int& movingCount, TTF_Font* font);
+        void WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music, int& movingCount, TTF_Font* font, int totalTime);
+        void LoseGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music);
 
     private:
         int x_empty_ = 4;

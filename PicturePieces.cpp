@@ -5,11 +5,13 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
     LTexture FirstScreen;
     FirstScreen.loadFromFile("image/FirstPic.png", renderer);
     FirstScreen.render(0, 0, renderer, NULL);
-    SDL_RenderPresent(renderer);
 
     LButton ChooseTheme;
     LButton About;
     LButton Quit;
+    LButton Theme1;
+    LButton Theme2;
+    LButton Theme3;
 
     LTexture Button;
     LTexture ChooseTheme_;
@@ -22,71 +24,90 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
     ChooseTheme.setPosition(ChooseTheme_x, ChooseTheme_y);
     About.setPosition(About_x, About_y);
     Quit.setPosition(QuitF_x, QuitF_y);
+    Theme1.setPosition(Theme1_x, Theme1_y);
+    Theme2.setPosition(Theme2_x, Theme2_y);
+    Theme3.setPosition(Theme3_x, Theme3_y);
 
     bool startGame_ = false;
     while(!startGame_)
     {
-        SDL_PollEvent(e);
-        if(e->type == SDL_QUIT) exit(1);
+        while(SDL_PollEvent(e)){
         SDL_RenderClear(renderer);
         FirstScreen.render(0, 0, renderer, NULL);
+        if(e->type == SDL_QUIT) exit(1);
         if(ChooseTheme.handleEvent(e) == MOUSE_OVER_MOTION)
         {
             Button.render(ChooseTheme_x, ChooseTheme_y, renderer, NULL);
-            SDL_RenderPresent(renderer);
-            SDL_Delay(200);
         }
         if(About.handleEvent(e) == MOUSE_OVER_MOTION)
         {
             Button.render(About_x, About_y, renderer, NULL);
-            SDL_RenderPresent(renderer);
-            SDL_Delay(200);
         }
         if(Quit.handleEvent(e) == MOUSE_OVER_MOTION)
         {
             Button.render(QuitF_x, QuitF_y, renderer, NULL);
-            SDL_RenderPresent(renderer);
-            SDL_Delay(200);
+
         }
+
         if(ChooseTheme.handleEvent(e) == MOUSE_DOWN)
         {
             playClickSound(music);
             bool inTheme = true;
             while(inTheme)
             {
-                SDL_PollEvent(e);
+
+                while(SDL_PollEvent(e)){
+                SDL_RenderClear(renderer);
+                ChooseTheme_.render(0, 0, renderer, NULL);
                 if (e->type == SDL_QUIT)
                 {
                     exit(1);
                 }
-                ChooseTheme_.render(0, 0, renderer, NULL);
-                switch(e->key.keysym.sym)
+
+                if(Theme1.handleEvent(e) == MOUSE_OVER_MOTION)
                 {
-                case SDLK_1:
+                    Button.render(Theme1_x, Theme1_y, renderer, NULL);
+                }
+                if(Theme2.handleEvent(e) == MOUSE_OVER_MOTION)
+                {
+                    Button.render(Theme2_x, Theme2_y, renderer, NULL);
+                }
+                if(Theme3.handleEvent(e) == MOUSE_OVER_MOTION)
+                {
+                    Button.render(Theme3_x, Theme3_y, renderer, NULL);
+                }
+
+                if(Theme1.handleEvent(e) == MOUSE_DOWN)
+                {
+                    playClickSound(music);
                     numTheme = 1;
                     inTheme = false;
                     startGame_ = true;
-                    break;
-                case SDLK_2:
+                    return;
+                }
+                if(Theme2.handleEvent(e) == MOUSE_DOWN)
+                {
+                    playClickSound(music);
                     numTheme = 2;
                     inTheme = false;
                     startGame_ = true;
-                    break;
-                case SDLK_3:
+                    return;
+                }
+                if(Theme3.handleEvent(e) == MOUSE_DOWN)
+                {
+                    playClickSound(music);
                     numTheme = 3;
                     inTheme = false;
                     startGame_ = true;
-                    break;
-                case SDLK_b:
+                    return;
+                }
+                if(e->key.keysym.sym == SDLK_b)
+                {
                     inTheme = false;
-                    break;
-                default:
-                    inTheme = true;
-                    break;
                 }
 
                 SDL_RenderPresent(renderer);
-            }
+            }}
         }
         if(About.handleEvent(e) == MOUSE_DOWN)
         {
@@ -102,14 +123,16 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
                 SDL_RenderPresent(renderer);
             }
         }
+
         if(Quit.handleEvent(e) == MOUSE_DOWN)
         {
             playClickSound(music);
-            exit(1);
+            exit(2);
         }
 
+
         SDL_RenderPresent(renderer);
-    }
+    }}
     return;
 }
 
@@ -258,7 +281,7 @@ void GameMap::functionChoice(int& y_empty, int& x_empty, int type, bool& quit, M
 
 }
 
-void GameMap::WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music, int& movingCount, TTF_Font* font)
+void GameMap::WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music, int& movingCount, TTF_Font* font, int totalTime)
 {
     LTexture winGame;
     winGame.loadFromFile("image/winGame.png", renderer);
@@ -300,6 +323,46 @@ void GameMap::WinGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, 
             }
             winGame.render(150, 30, renderer, NULL);
             renderWinMove.rendererText(renderer, 280, 420, NULL);
+            SDL_RenderPresent(renderer);
+        }
+    }
+}
+
+void GameMap:: LoseGame(SDL_Renderer* renderer, SDL_Event event_, bool& tryAgain, MusicGame& music)
+{
+    LTexture loseGame;
+    loseGame.loadFromFile("image/loseGame.png", renderer);
+
+    LTexture frameChoice;
+    frameChoice.loadFromFile("image/choice.png", renderer);
+
+    LButton TryAgain;
+    LButton Quit;
+
+    Quit.setPosition(Quit_x, Quit_y);
+    TryAgain.setPosition(TryAgain_x, TryAgain_y);
+
+    bool out = false;
+    while(!out)
+    {
+        while(SDL_PollEvent(&event_))
+        {
+            if (event_.type == SDL_QUIT)
+            {
+                exit(1);
+            }
+            if(Quit.handleEvent(&event_) == MOUSE_DOWN)
+            {
+                exit(1);
+            }
+            if(TryAgain.handleEvent(&event_) == MOUSE_DOWN)
+            {
+                playClickSound(music);
+                SDL_Delay(200);
+                tryAgain = true;
+                out = true;
+            }
+            loseGame.render(150, 30, renderer, NULL);
             SDL_RenderPresent(renderer);
         }
     }
