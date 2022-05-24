@@ -35,7 +35,7 @@
 ### *Preview*
 
 
-![](image/FirstPic.png)
+![](image/startGame.png)
 
 ![](image/About.png)
 
