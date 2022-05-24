@@ -38,7 +38,7 @@
 ![](image/startGame.png)
 
 ![](image/About.png)
-![](image/Capture.png)
+![](image/Capture.PNG)
 ![](image/ThemeChoice.png)
 ![](image/winGame.png)
 
