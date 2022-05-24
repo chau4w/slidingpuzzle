@@ -12,7 +12,8 @@
 #include <sstream>
 #include <fstream>
 #include <time.h>
-
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 static SDL_Window* gWindow = NULL;
@@ -23,7 +24,7 @@ static TTF_Font* g3Font = NULL;
 
 static int type;
 
-const int MAX_TIME = 90;
+const int MAX_TIME = 120;
 
 const int SCREEN_WIDTH = 950;
 const int SCREEN_HEIGHT = 650;
@@ -52,6 +53,9 @@ const int About_y = 330;
 const int QuitF_x = 750;
 const int QuitF_y = 480;
 
+const int Rank_x = 750;
+const int Rank_y = 580;
+
 const int Theme1_x = 85.2;
 const int Theme1_y = 483.78;
 
@@ -61,6 +65,8 @@ const int Theme2_y = 483.78;
 const int Theme3_x = 680.8;
 const int Theme3_y = 483.78;
 
+const string path_ = "image/rankRecord.txt";
+
 #define NUMBER_RANDOM_ 50
 typedef struct MAP
 {
@@ -69,6 +75,9 @@ typedef struct MAP
     int piece_true_[MAX_MAP_Y][MAX_MAP_X];
     string fileName;
 };
+
+void sortRecord(vector<int>& a, string path);
+
 
 bool init(SDL_Window* window, SDL_Renderer*& renderer);
 void close();

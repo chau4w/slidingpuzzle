@@ -1,14 +1,19 @@
 #include "PicturePieces.h"
 
-void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& music)
+void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& music, vector <int> rankRecord, TTF_Font* font)
 {
     LTexture FirstScreen;
-    FirstScreen.loadFromFile("image/FirstPic.png", renderer);
+    FirstScreen.loadFromFile("image/startGame.png", renderer);
     FirstScreen.render(0, 0, renderer, NULL);
+
+    Text RecordRank;
+    RecordRank.setColor(MAIN_COLOR_);
 
     LButton ChooseTheme;
     LButton About;
     LButton Quit;
+    LButton Rank;
+
     LButton Theme1;
     LButton Theme2;
     LButton Theme3;
@@ -16,14 +21,18 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
     LTexture Button;
     LTexture ChooseTheme_;
     LTexture About_;
+    LTexture Rank_;
 
     Button.loadFromFile("image/choice.png", renderer);
     ChooseTheme_.loadFromFile("image/ThemeChoice.png", renderer);
     About_.loadFromFile("image/About.png", renderer);
+    Rank_.loadFromFile("image/Rank.png", renderer);
 
     ChooseTheme.setPosition(ChooseTheme_x, ChooseTheme_y);
     About.setPosition(About_x, About_y);
     Quit.setPosition(QuitF_x, QuitF_y);
+    Rank.setPosition(Rank_x, Rank_y);
+
     Theme1.setPosition(Theme1_x, Theme1_y);
     Theme2.setPosition(Theme2_x, Theme2_y);
     Theme3.setPosition(Theme3_x, Theme3_y);
@@ -47,6 +56,11 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
         {
             Button.render(QuitF_x, QuitF_y, renderer, NULL);
 
+        }
+
+        if(Rank.handleEvent(e) == MOUSE_OVER_MOTION)
+        {
+            Button.render(Rank_x, Rank_y, renderer, NULL);
         }
 
         if(ChooseTheme.handleEvent(e) == MOUSE_DOWN)
@@ -120,6 +134,43 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
                 About_.render(0, 0, renderer, NULL);
                 if(e->key.keysym.sym == SDLK_b)
                     inAbout = false;
+                SDL_RenderPresent(renderer);
+            }
+        }
+
+        if(Rank.handleEvent(e) == MOUSE_DOWN)
+        {
+
+            playClickSound(music);
+            bool inRank =  true;
+            while(inRank)
+            {
+                SDL_PollEvent(e);
+                if(e->type == SDL_QUIT) exit(1);
+                Rank_.render(0, 0, renderer, NULL);
+                if(e->key.keysym.sym == SDLK_b)
+                    inRank = false;
+                if(rankRecord.size() > 5)
+            {
+                for(int i  = 0; i < 5; i++)
+                {
+                    int tmp = rankRecord[i];
+                    RecordRank.setText("1." + to_string(tmp));
+                    RecordRank.loadFromRenderText(font, renderer);
+                    RecordRank.rendererText(renderer, 40, 200 + 50*i, NULL);
+                }
+            }
+            else
+            {
+                for(int i  = 0; i < rankRecord.size(); i++)
+                {
+                    int tmp = rankRecord[i];
+                    RecordRank.setText("No" + to_string(i + 1)+ ". " + to_string(tmp));
+                    RecordRank.loadFromRenderText(font, renderer);
+                    RecordRank.rendererText(renderer, 400, 200 + 80*i, NULL);
+                }
+            }
+
                 SDL_RenderPresent(renderer);
             }
         }

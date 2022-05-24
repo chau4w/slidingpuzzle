@@ -53,6 +53,17 @@ bool init(SDL_Window* window, SDL_Renderer*& renderer)
     }
     return success;
 }
+void sortRecord(vector<int>& a, string path)
+{
+    ifstream file(path);
+    while(!file.eof())
+    {
+        int k;
+        file >> k;
+        a.push_back(k);
+    }
+    sort(a.begin(), a.end());
+}
 
 void close()
 {

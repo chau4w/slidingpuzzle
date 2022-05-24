@@ -32,7 +32,10 @@ int main(int argc, char* argv[])
                 int numTheme = 0;
                 int moveCount = 0;
 
-                startGame(gRenderer, &e, numTheme, music);
+                vector <int>rankRecord;
+                sortRecord(rankRecord, path_);
+
+                startGame(gRenderer, &e, numTheme, music, rankRecord, g3Font);
                 gBackGround.loadFromFile("image/theme" + to_string(numTheme) + "/backGround" + to_string(numTheme)+ ".png", gRenderer);
                 tryAgain_ = false;
 
@@ -49,7 +52,6 @@ int main(int argc, char* argv[])
 
                 while(!quit)
                 {
-
                     if(numTheme == 1)
                         renderMove.setColor(RED_);
                     if(numTheme == 2)
@@ -99,6 +101,9 @@ int main(int argc, char* argv[])
                 gBackGround.render(0, 0, gRenderer);
                 if(tryAgain_ != true && loseGame != true)
                 {
+                    ofstream file;
+                    file.open(path_, ios::app);
+                    file << moveCount << " ";
                     game_map_.WinGame(gRenderer, e, tryAgain_, music,moveCount, gFont, totalTime);
                 }
                 else if(tryAgain_ != true && loseGame == true)

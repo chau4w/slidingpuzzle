@@ -11,7 +11,7 @@
 	<string>
 	<sstream>
 
-1652948290 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
+1653405432 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\main.cpp
 	"PicturePieces.h"
 	"Time.h"
 
@@ -404,10 +404,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1652929524 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
+1653402094 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.cpp
 	"Variable.h"
 
-1652948595 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
+1653405671 c:\users\administrator\desktop\choutapcode\slidingpuzzle\variable.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -418,6 +418,8 @@
 	<sstream>
 	<fstream>
 	<time.h>
+	<vector>
+	<algorithm>
 
 1651633840 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\function.cpp
 	"Function.h"
@@ -431,10 +433,10 @@
 1652626282 c:\users\administrator\desktop\choutapcode\slidingpuzzle\texture.h
 	"Variable.h"
 
-1652929246 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
+1653405506 source:c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.cpp
 	"PicturePieces.h"
 
-1652928961 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
+1653404871 c:\users\administrator\desktop\choutapcode\slidingpuzzle\picturepieces.h
 	"Variable.h"
 	"KeyFunction.h"
 	"MouseFunction.h"

@@ -39,6 +39,6 @@ class GameMap
         MAP game_map_;
         Pieces picture_pieces_[MAX_TYPES + 1];
 };
-void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& music);
+void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& music, vector <int> rankRecord, TTF_Font* font);
 
 #endif // PICTURE_PIECES_H
