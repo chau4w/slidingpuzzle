@@ -155,9 +155,9 @@ void startGame(SDL_Renderer* renderer, SDL_Event* e, int& numTheme, MusicGame& m
                 for(int i  = 0; i < 5; i++)
                 {
                     int tmp = rankRecord[i];
-                    RecordRank.setText("1." + to_string(tmp));
+                    RecordRank.setText("No" + to_string(i + 1)+ ". " + to_string(tmp));
                     RecordRank.loadFromRenderText(font, renderer);
-                    RecordRank.rendererText(renderer, 40, 200 + 50*i, NULL);
+                    RecordRank.rendererText(renderer, 400, 200 + 80*i, NULL);
                 }
             }
             else
