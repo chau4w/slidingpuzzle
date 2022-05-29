@@ -15,6 +15,10 @@
 
 - Game gồm 3 chủ đề hình ảnh với background tương ứng để bạn tuỳ ý lựa chọn.
 
+- Thời gian tối đa của mỗi màn chơi là 120 giây. Sau khoảng thời gian trên, bạn sẽ bị tính là thua. 
+
+- Bạn sẽ được lưu điểm trên bảng xếp hạng nếu hoàn thành màn chơi trong thời gian quy định với số lượt di chuyển ít nhất. 
+
 ### *Controls and Options*
 
 
@@ -75,6 +79,12 @@
 
 - Thư viện SDL2.0.
 
+- Tìm hiểu lập trình hướng đối tượng.
+
+- Kĩ thuật đọc ghi file.
+
+- Kĩ thuật chia file header và file source.
+
 - Tạo các đối tượng: các ô ảnh, ...
 
 - Tạo các đối tượng phụ: số lượt di chuyển...
@@ -83,6 +93,8 @@
 
 - Tạo các menu: Bắt đầu, kết thúc, lựa chọn chủ đề, hướng dẫn,...
 
+- Tạo bảng xếp hạng
+
 - Đóng gói chương trình để có thể cài đặt, chơi được ở các máy tính thông thường.
 
 ### *Mức điểm tự đánh giá: 9/10.*
@@ -90,11 +102,14 @@
 ### *Nguồn tham khảo:*
 - Logic game em tự nghĩ.
 
+- Tự design hình ảnh.
+
 - https://lazyfoo.net/tutorials/SDL/index.php (thư viện SDL2.0, ...)
 
 - https://phattrienphanmem123az.com/lap-trinh-game-cpp (tile map, tạo menu).
-- Một số hình ảnh tự design và âm thanh tìm ở trên web -.-
-https://www.wavsource.com/sfx/sfx.htm,
-https://vi.pngtree.com/
+
+- https://www.wavsource.com/sfx/sfx.htm
+
+- https://vi.pngtree.com/
 
 
