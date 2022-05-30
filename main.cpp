@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
             do
             {
                 MusicGame music;
-                //playMuzikBackGround(music);
+                playMuzikBackGround(music);
 
                 SDL_Event e;
                 int numTheme = 0;
