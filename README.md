@@ -37,7 +37,8 @@
 
 
 ### *Preview*
-
+Video demo:
+https://clipchamp.com/watch/xVW3gzEtNx5
 
 ![](image/startGame.png)
 
